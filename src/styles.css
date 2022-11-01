@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    background-image: url(https://images.unsplash.com/photo-1596559562942-fef1cd1a0171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGFkZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-position:100%;  
+    background-size: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: #2a9d8f;
+    color: #fff;
+    margin-bottom: 25px;
+}
+#logo{
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+    color: #faedcd;
+    justify-content: center;
+}
+.cart-icon{
+    position: relative;
+    background-color:#faedcd ;
+    color: #2a9d8f;
+    width: 2.0em;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 15px;
+    font-size: 30px;
+}
+.cart-amount{
+    top: -15px;
+    right: -12px;
+    position: absolute;
+    background-color: #f4a261;
+    color: black;
+    width: 1.1em;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 0px;
+}
+/**styling cards**/
+
+#container{
+    display:grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(2,370px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+
+}
+@media (max-width:1000px) {
+    #container{
+        grid-template-columns: repeat(2,250px);
+    }
+    body{
+        background-image: url(https://images.unsplash.com/photo-1596559562942-fef1cd1a0171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGFkZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-position:100%;  
+        background-size: 100%;
+    }
+    }
+
+@media (max-width:500px) {
+#container{
+    grid-template-columns: repeat(1,250px);
+
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1596559562942-fef1cd1a0171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGFkZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:100%;  
+    background-size: 100%;
+}
+}
+.cards{
+    border-radius: 8px;
+    border: 2px solid rosybrown;
+    margin: 5px;
+    background-color:#2a9d8f;
+    color:#faedcd;
+    position: relative;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+
+
+}
+p{
+    font-size: 12px;
+}
+
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 5px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 22px;
+}
+h3{
+    color: black;
+}
+.price{
+    color: black;
+}
+.quantity{
+    color: black;
+}
+.bi-dash-lg{
+    background-color: #fff;
+    color: red;
+    border-radius: 5px;
+}
+.bi-plus-lg{
+    background-color: #fff;
+    color: green;
+    border-radius: 5px;
+}
+/**
+* ! style rules for label and some buttons
+**/
+.text-center{
+    color: #ffa667;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.homebtn , .checkout , .clear{
+    background-color:#2a9d8f;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.clear{
+    background-color:rgb(247, 23, 23);
+}
+.checkout{
+    background-color:rgb(7, 125, 7);
+}
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+/**
+* !styles rules  for .shopping-cart
+**/
+.shopping-cart{
+display: grid;
+grid-template-columns: repeat(1,320px);
+justify-content: center;
+}
+
+/**
+* !styles rules  for cart-item
+**/
+.cart-item{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.title-price-x{
+    width:200px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.cart-item-price{
+    background-color: rgb(46, 44, 44);
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 3px 6px;
+
+}
+.buttons-cart{
+    display: flex;
+    justify-content: start;
+    gap: 8px;
+    font-size: 16px;
+}
+
+
